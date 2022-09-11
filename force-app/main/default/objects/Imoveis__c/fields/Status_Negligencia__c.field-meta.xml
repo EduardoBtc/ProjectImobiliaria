@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Negligencia__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(
+      CASE(Negligencia__c, 
+&apos;Negligência entre 3 a 10 dias&apos;, &quot;/resource/CirculosAvisos/circuloVerde.png&quot;,
+&apos;Negligência entre 5 a 15 dias&apos;, &quot;/resource/CirculosAvisos/circuloAmarelo.png&quot;,
+&apos;Negligência de 15 dias&apos;, &quot;/resource/CirculosAvisos/circuloVermelho.png&quot;, &apos;&apos;), &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Negligência</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

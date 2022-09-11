@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>valida_tipo_comercial</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+
+  ISPICKVAL(Finalidade_do_Imovel__c, &apos;Comercial&apos;),
+				 ISPICKVAL(Tipo_Comercial__c,&apos;&apos; ) 
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Tipo_Comercial__c</errorDisplayField>
+    <errorMessage>O tipo comercial é obrigatório!</errorMessage>
+</ValidationRule>

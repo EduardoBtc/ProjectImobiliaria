@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_Comercial__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo Comercial</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Finalidade_do_Imovel__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loja</fullName>
+                <default>false</default>
+                <label>Loja</label>
+            </value>
+            <value>
+                <fullName>Fabrica</fullName>
+                <default>false</default>
+                <label>Fabrica</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Comercial</controllingFieldValue>
+            <valueName>Loja</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Comercial</controllingFieldValue>
+            <valueName>Fabrica</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
